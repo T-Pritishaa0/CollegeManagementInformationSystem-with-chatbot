@@ -1,0 +1,274 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hii", "."],
+         "responses": ["Hello!", "Hi there, how can I help?","yes, how can I help","Good to see you again!", "Welcome", "How can I help ", "yes i am heraring"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "ok thanks", "bye", "Bye Bye", "OK thanks","ok","bye","thanks","Thankyou"],
+         "responses": ["Sad to see you go 😒", "Talk to you later", "Goodbye!", "Catch you later","Take care 😊","Bye","See you later","See you again"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?", "Your name", "Who are you?","name","tell your name"],
+         "responses": ["You can call your personal assistant.", "I'm your assistant!" ,"I am CollegeBot"],
+         "context_set": ""
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand","Hmmm...i didn't understand","I cant understand sorry."],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","guide me"],
+         "responses": ["I can guide you through the website", "Help you to guide through this website"],
+         "context": [""]
+        },
+        {"tag": "location",
+         "patterns": ["location?", "where are you located at?", "address?", "where is the college located at?","what is it's address"],
+         "responses": ["We are located at Naxal, Kathmandu.", "You can visit us at Naxal, Kathmandu."],
+         "context_set": ""
+        },
+        {"tag": "Creator",
+          "patterns": ["who is your creator?","Who has made you?", "Who's the man who made you?"],
+          "responses": ["Probably some college student who is doing this project, but I don't know her..."],
+          "context": ""
+        },
+        {"tag": "Discount",
+          "patterns": ["No discount on fees?","Do you offer a discount on fees?", "Don't offer any discount on fees?","Don't give discounts on fees?","Don't you have a discount?","Isn't there a discount?", "Aren't you going to offer discounts?", "Can't you offer a discount?","You're not giving discounts?"],
+          "responses": ["No, there is no any scholarship or discount schemes for the students. However, with your excellent college performance, you could be provided with various internship opportunities within the college after the very first year ."],
+          "context": ""
+        },
+        {"tag": "hours",
+         "patterns": ["service available", "what are your hours", "hours of operation","available time","open time","available","time","open","service"],
+         "responses": ["We are open from 7am to 5pm"],
+         "context_set": ""
+        },
+        {"tag": "Enrolment_Criteria",
+          "patterns": ["What are the enrollment criteria to study in this college?", "What are the entry requirements for this college?","What are the enrolment criteria to attend this college?","What are the entry criteria to study at this university?","What are the enrolment requirements to study at this college?", "What are the enrolment criteria for that university?", "What are the registration criteria for studying at the college?","What are the criteria for enrolling in this college?"],
+          "responses": ["For BIT, you need to have NEB +2 Qualification with atleast an aggregate of 2.2 GPA or >55% with atleast 2.4 GPA in English subject.\nFor BBA,  you need to have NEB +2 Qualification with atleast an aggregate of 1.8 GPA or >45% with atleast 1.8 GPA in English subject.\nIf you are an A-level Student, you need to have a minimum of 3.5 credits and at least a grade of D and above."],
+          "context": ""
+        },
+        {"tag": "Entrance",
+          "patterns": ["Do I need to give entrance exams?", "Do I need to take entrance exams?", "Should I have an entrance exam?","Must I take entrance exams?", "Do I have to pass entry examinations?","Is there an entrance exam to study in this college?","Are there entrance tests to study here?", "Are there entry examinations to study at this college?","Do you have entrance examinations to study at this college?", "Is there an entrance examination here?"],
+          "responses": ["No, you are not required to give any entrance exams, you only need to have satisfied the following enrollment criterias:\nFor BIT, you need to have NEB +2 Qualification with atleast an aggregate of 2.2 GPA or >55% with atleast 2.4 GPA in English subject.\nFor BBA,  you need to have NEB +2 Qualification with atleast an aggregate of 1.8 GPA or >45% with atleast 1.8 GPA in English subject.\nIf you are an A-level Student, you need to have a minimum of 3.5 credits and at least a grade of D and above."],
+          "context": ""
+        },
+        {"tag": "Info_Not_Helpful",
+          "patterns": ["Your information was not helpful", "Your information was useless.", "Your information has been unhelpful.", "Your information did not help.", "Your information was of no value.","Your information has been of little assistance.", "Your information has not been of any help.", "That information was not useful.", "The information you provided was not useful.", "I'm confused with what you just said", "I still didn't get it"],
+          "responses": ["I'm sorry if you think I could not help you enough. You can directly talk to the college staffs if you are still confused with some topic and need further assistance. \nContact numbers: 9838902569, 01-4078925, 01-40380641"],
+          "context": ""
+        },
+ 
+        {"tag": "courses",
+          "patterns": ["courses available", "what are the courses provided?", "courses provided?","available courses","subjects?","what subjects does the college provide?","department","department available?"],
+          "responses": ["The courses available are: BIT, BBA, MBA"],
+          "context_set": ""
+         },
+         {"tag": "No_character",
+          "patterns": ["What if I do not have my character certificate.", "What to do if I have no character certificate? "],
+          "responses": ["In that case, you should make one as soon as possible from your high school and bring it here for admission."],
+          "context": ""
+        },
+        {"tag": "No_citizenship",
+          "patterns": ["What if I do not have my citizenship certificate?","What happens if I have no citizenship certificate?","What happens if I haven't got my citizenship certificate?","What happens if I don't have a citizenship card?","What should I do if I do not have my citizenship card?"],
+          "responses": ["In that case, you should be present with your birth certificate."],
+          "context": ""
+        },
+        {"tag": "No_transcript",
+          "patterns": ["What if I do not have my transcript?", "What if I haven't got my transcript?", "What if I haven't got my transcript?", "What if I don't get my transcript?","How do I proceed if I do not have my transcript?"],
+          "responses": ["In that case, you should be present with your 11 and 12 grades marksheet."],
+          "context": ""
+        },
+        {"tag": "Offensive",
+          "patterns": ["Hey Fuck off !","Go fuck yourself up.","You can kiss my ass.", "Fuck you, you son of a bitch.","All right, fuck off.","Fuck","fuck"],
+          "responses": ["Please avoid the use of such offensive language. If you're frustated with something we are always open to your feedback."],
+          "context": ""
+        },
+        {"tag": "rude",
+          "patterns": ["You are stupid","You are so foolish.", "You have no sense.", "You look like a fool.", "You are a silly man.", "You are such a jerk.", "You look like an idiot.","You are a complete idiot.", "You look so stupid.", "Go to hell, buddy"],
+          "responses": ["Let's talk when you are feeling calmer because I really want to find a way for us to communicate in a more respectful way."],
+          "context": ""
+        },
+        {"tag": "Salutation",
+          "patterns": ["Namaste"],
+          "responses": ["Namaste Sir/Ma'am, how can I help you?"],
+          "context": ""
+        },
+        {"tag": "Sup",
+          "patterns": ["How are you today?", "How are you?","How do you do?","How you doing today?", "How have you been?", "Are you all right today?","How you holding up today?","How are you this morning?","Sup?","What's up?","Wassup?"],
+          "responses": ["I'm super! Thanks for asking"],
+          "context": ""
+        },
+        {"tag": "weather",
+          "patterns": ["What is the weather today?"],
+          "responses": ["I'm sorry, the weather is outside my capabilities"],
+          "context": ""
+        },
+        {"tag": "Good_afternoon",
+          "patterns": ["Good aftrernoon", "Afternoon!"],
+          "responses": ["Good afternoon, sir, how are you today?"],
+          "context": ""
+        },
+        {"tag": "good_morning",
+          "patterns": ["Morning", "Hi, Good morning!"],
+          "responses": ["Good morning!","A very good morning to you as well"],
+          "context": ""
+        },
+        {"tag": "good_night",
+          "patterns": ["Good night."],
+          "responses": ["Good night."],
+          "context": ""
+        },
+        {"tag": "ai",
+          "patterns": ["are you ai?"],
+          "responses": ["Yes! I'm artificial intelligence."],
+          "context": ""
+        },
+        {"tag": "bored",
+          "patterns": ["i am bored"],
+          "responses": ["Learning about Neural Networks is nice way to get fun! "],
+          "context": ""
+        },
+        {"tag": "Gender",
+          "patterns": ["Are you a girl or a boy ?","What is your gender?"],
+          "responses": ["I'm gender neutral, I'm not boy or girl!"],
+          "context": ""
+        },
+        {"tag": "Genral_conv",
+          "patterns": ["what do you think about humans?"],
+          "responses": ["Nothing in particular. What should I think?"],
+          "context": ""
+        },
+        {"tag": "age",
+          "patterns": ["how old are you?","age"],
+          "responses": ["I was developed just few months back. Did you think I was older?"],
+          "context": ""
+        },
+        {"tag": "look",
+          "patterns": ["How do you look like?"],
+          "responses": ["I focus on intelligence and rock a smart A.I. look"],
+          "context": ""
+        },
+
+        {"tag": "admission",
+          "patterns": ["admission open?", "when are you taking new admission?", "admission time?","when will new session start?", "Are you taking new admission?"],
+          "responses": ["We are taking admission, please visit the college!"],
+          "context_set": ""
+        },
+        {"tag": "established",
+          "patterns": ["when was the college established?", "when was the college founded?", "established?","established date?"],
+          "responses": ["The college was founded in 2016 AD."],
+          "context_set": ""
+        },
+        {"tag": "ceo",
+          "patterns": ["ceo of the college?", "who is the ceo of the college?", "ceo?"],
+          "responses": ["The CEO of the college is Mr.Vansh Rai Singhania"],
+          "context_set": ""
+        },
+        {"tag": "register",
+          "patterns": ["register", "How do i register?", "should i register","register options","reg","signup","should i register?"],
+          "responses": ["You do not need to register, if you are student of the college email id is given to you, please login through it."],
+          "context_set": ""
+        },
+        {"tag": "login",
+          "patterns": ["login", "signin", "login option","should i login?","how can i login","what are login options?","login option","how do i login","log in"],
+          "responses": ["If you are student of the college email id is given to you, please login through it."],
+          "context_set": ""
+        },
+        {"tag": "facilities",
+          "patterns": ["facility?", "facility", "facilities?","facilities?","What facilites does the college provide?","college facilities","college facility"],
+          "responses": ["The college provide hostel facilities, playgrounds, college canteen, lab equipped with high end systems."],
+          "context_set": ""
+        },
+        {"tag": "scholarship",
+          "patterns": ["scholarship?", "scholarship", "does college provide scholarship","is there any scholarship facility?"],
+          "responses": ["College provides scholarship to the students who score high percentage in the exams. "],
+          "context_set": ""
+        },
+        {"tag": "Admission_Docs",
+          "patterns": ["What documents should I bring for admission?", "Which documents must I bring for admission?", "What documentation do I have to bring for admission?", "What documents need to be brought for admission?", "What documents do I have to bring for intake?","What documents do I need to carry for admission?"],            
+          "responses": ["You need to bring your citizenship certificate, transcript and provisional certificate, SLC/SEE marksheet, and character certificate for admission. If you do not have your citizenship certificate, you must bring your birth certificate. Also, you are required to bring your 11 and 12 grades marksheet, if you do not have your provisional or transcript. Lastly, you are required to bring either cash or cheque of Rs 96,000 as the admission fee."], 
+          "context": ""
+        },
+        {"tag": "Admission_time",
+          "patterns": ["When is the time for admission ?","What time is it to be admitted ?", "When do you get into theCollege?"],
+          "responses": ["There are two intakes for admission in a year, Autumn intake that starts around October-November, and Spring intake which starts around March-April. You can admit in the college in any of these  intakes."],
+          "context": ""
+},
+        {"tag": "AskBot",
+          "patterns": ["Can I ask you something?", "Would you mind if I asked you a question?","Do you mind if I ask you one question?", "Let me ask you a question?", "Can I ask you a favor?", "May I ask you one question?", "Can I ask you one thing?"],
+          "responses": ["Sure ! That's what I'm here for, to answer your queries"],
+          "context": ""
+        },
+        {"tag": "bot_language",
+          "patterns": ["What is your primary language?","What language do you speak?","Do you speak English?","Do you speak Nepali?","So you speak Hindi?"],
+          "responses": ["I only speak English"],
+          "context": ""
+        },
+        {"tag": "Bot_work",
+          "patterns": ["What you can do?","What is that bot for?","What are you supposed to do?","How can you help?", "Is there anything you can do?", "What are you supposed to do?","What do you have to do?","And what is your goal?"],
+          "responses": ["I can guide you through the courses, facilities and fee structures ", "My goal is to be a good company and be as informative as possible"],
+          "context": ""
+},
+        {"tag": "BBA_Background",
+          "patterns": ["Can a science student study BBA?","Is it possible for a science student to study BBA?", "Can a science student learn BBA?", "Is a science student allowed to study BBA?","Can a science student go to BBA?","Can an Undergraduate Science Student study BBA?"],
+          "responses": ["Yes! no matter what's your +2 background, you can enroll in any courses in this college if you satisfy the enrollment criteria."],
+          "context": ""
+        },
+        {"tag": "BBA_fee",
+          "patterns": ["How much does it cost to study BBA?","What's the cost of studying BBA?","How much do you pay to study BBA?","How much does a BBA course cost?", "How much is studying the BBA?","What does studying the BBA cost?"],
+          "responses": ["The initial admission fee is Rs 96,000 that is one-time and non-refundable. Semester fees is Rs 42,000 which shall be paid before the start of each semester, (i.e. 8 semesters for BBA). The University fee is  Rs 1,00,000 which shall be paid every year before the starting of the semester. (i.e 4 times for 4 years in BBA). So, the total cost for the completion of the whole course will be about Rs 8,32,000 for BBA. Moreover, there are no any hidden costs and fees included other than the ones mentioned."],
+          "context": ""
+        },
+        {"tag": "BIT_Fee",
+          "patterns": ["What is the fee structure for BIT?","What is the pricing structure of BIT?"],
+          "responses": ["The initial admission fee is Rs 96,000 that is one-time and non-refundable. Semester fees is Rs 70,000 which shall be paid before the start of each semester, (i.e. 6 semesters for BIT). The University fee is  Rs 1,00,000 which shall be paid every year before the starting of the semester. (i.e 3 times for 3 years in BIT). So, the total cost for the completion of the whole course will be about Rs 8,16,000 for BIT. Moreover, there are no any hidden costs and fees included other than the ones mentioned."],
+          "context": ""
+        },
+
+        {"tag": "bit",
+            "patterns": ["BIT", "BIT?", "BIT course","How many year course is bit","BIT year?"],
+            "responses": ["The academic program is 3 years long. This curriculum aims to provide students with knowledge of core computer science concepts by integrating them with current computer languages, methods, techniques, and methodologies used by computer professionals worldwide."],
+            "context_set": ""
+        },
+        {"tag": "bba",
+          "patterns": ["BBA", "BBA?", "BBA course","How many year course is bba","BBA year?"],
+          "responses": ["The academic program is 4 years long. BBA is designed to address the need of the students to learn about themselves as well as the professional world that surrounds them. "],
+          "context_set": ""
+        },
+        {"tag": "mba",
+          "patterns": ["MBA", "MBA?", "MBA course","How many year course is mba","MBA year?"],
+          "responses": ["The academic program is 2 years long. The two-year programme is a gateway to a plethora of job opportunities in the corporate world."],
+          "context_set": ""
+        },
+        {"tag": "Courses",
+          "patterns": ["What courses are there in the college?", "Tell me about the faculties.","What courses does the college offer?","What courses do you have in college?", "What courses exist at the college?", "Which courses are offered at the college?", "What courses are available at college?","What about the college faculties."],
+          "responses": ["The college provides two courses that are BBA, BIT and MBA"],
+          "context": ""
+},
+        {"tag": "bit course",
+          "patterns": ["course structure of BIT", "BIT course structure", "bit course structure","subjects in bit","What subjects are there in BIT?","Can you tell me anything about BIT?","Can you tell us more about BIT?","Please tell me more about BIT?", "Can you give me more information on BIT?"],
+          "responses": ["The academic program is 3 years long. Year 1: Introductory Programming and Problem Solving,  Fundamentals of Computing,  Embedded System Programming, Computational Mathematics, Internet Software Architecture. Year 2: Concepts and Technologies of AI, Object-Oriented Design and Programming, Distributed and Cloud System Programming, Human Computer Interaction, Numerical Methods and Concurrency. Year 3: Complex System,  High Performance Computing, Project and Professionalism, Artificial Intelligence and Machine Learning, Big Data"],
+          "context_set": ""
+        },
+        {"tag": "bba course",
+          "patterns": ["course structure of BBA", "BBA course structure", "bba course structure","subjects in bba","What subjects are there in BBA?"],
+          "responses": ["The academic program is 4 years long. Year 1: Basic Research, Computer & IT Applications, English Language & Composition, Basic Statistics, Principles of Management, Financial Accounting and Reporting I, Applied Mathematics for Business. Year 2: Financial Accounting and Reporting II, Micro-economics, Applied Sociology, Introduction to Marketing, Macro-economics, Management Accounting, Finance. Year 3: Investment, Human Resource Management, Retail Management, Logic and Reasoning, International Business Management, Introduction to International Relations, Operations Management. Year 4: Research Methods & Skills, Exploring Strategy, New Enterprise Creation, Logistics and Supply Chain Management, Organization Behaviour, Advertising & Marketing Communications"],
+          "context_set": ""
+        },
+        {"tag": "mba course",
+          "patterns": ["course structure of MBA", "MBA course structure", "mba course structure","subjects in mba","What subjects are there in MBA?"],
+          "responses": ["The academic program is 2 years long. Year 1: Advanced Management Concepts Analysis, Organizational Behavior for Managers, Data Analysis for Managers, Global Sustainable Development, Business Economics, Directing Strategy for Value Creation, New Business Development, Introduction to Behavioral Finance. Year 2: Accounting for Managers, Business Management Consulting & Research, Strategic Marketing for Managers, Leadership Power & Policy for Managers, Financial Management, Human Resource Management, International Marketing, Operations & Supply Chain Management."],
+          "context_set": ""
+        },
+        {"tag": "contact",
+          "patterns": ["contact number", "contact number?", "contact details","contact details?","phone number?","phonenumber?","phonenumber","phone number","number","number?"],
+          "responses": ["Contact us: 4222171,4252784"],
+          "context_set": ""
+        }
+
+   ]
+}
+
+
